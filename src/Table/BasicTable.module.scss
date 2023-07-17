@@ -1,0 +1,43 @@
+.table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-bottom: 5px;
+}
+
+thead {
+    div {
+        height: 40px;
+        overflow: hidden;
+        text-transform: capitalize;
+    }
+
+    background-color: grey;
+}
+th,
+td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 3px;
+    word-wrap: break-word;
+}
+.row {
+    background-color: lightgray;
+}
+td {
+    cursor: pointer;
+    div {
+        height: 30px;
+        overflow: hidden;
+    }
+}
+.activeRow {
+    background-color: lightgreen;
+}
+.readRow {
+    opacity: 0.25;
+}
