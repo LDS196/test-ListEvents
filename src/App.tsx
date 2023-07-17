@@ -25,7 +25,7 @@ function App() {
         if (!searchValue) {
             return events
         } else {
-            return events.filter((el) => el.message.includes(searchValue))
+            return events.filter((el) => el.message.includes(searchValue.toLowerCase()))
         }
     }, [events, searchValue])
 
